@@ -5,7 +5,7 @@ import Header from './components/Header'
 import { Provider } from './theme/theme'
 import { Outlet } from 'react-router-dom';
 import Footer from './components/Footer';
-import MenuBar from './components/menubar';
+import MenuBar from './components/Menubar';
 import menuLogo from "/menu.svg"
 import closeLogo from "/cross.svg"
 import { set } from 'react-hook-form';

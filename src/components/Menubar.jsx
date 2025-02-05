@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import useAPI from "../theme/theme";
-import ThemeBtn from "./themebtn";
+import ThemeBtn from "./Themebtn";
 
 const MenuBar = () => {
     const { isMenubar, showMenuBar } = useAPI();

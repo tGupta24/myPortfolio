@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "../App.css";
-import CardButton from "./cardButton";
+import CardButton from "./CardButton";
 
 export default function Projects() {
     const sliderRef = useRef(null); // Ref to control the slider

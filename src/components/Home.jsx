@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import About from "./About.jsx";
-import Contact from "./contact";
+import Contact from "./Contact.jsx";
 import Skills from "./Skills";
-import Projects from "./project";
+import Projects from "./Projects.jsx";
 import "../App.css"
 
 

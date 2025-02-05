@@ -5,10 +5,10 @@ import App from './App.jsx'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import Home from './components/Home.jsx'
 
-import Contact from './components/contact.jsx'
+import Contact from './components/Contact.jsx'
 import Skills from './components/Skills.jsx'
 
-import Projects from './components/Project.jsx'
+import Projects from './components/Projects.jsx'
 
 import About from './components/About.jsx'
 
