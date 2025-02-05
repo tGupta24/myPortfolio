@@ -7,7 +7,9 @@ import Home from './components/Home.jsx'
 
 import Contact from './components/contact.jsx'
 import Skills from './components/Skills.jsx'
-import Projects from './components/project.jsx'
+
+import Projects from './components/Project.jsx'
+
 import About from './components/About.jsx'
 
 const router = createBrowserRouter(   // i create a router for routerProvider 
