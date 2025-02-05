@@ -1,0 +1,37 @@
+.logos {
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    display: flex;
+    
+
+}
+
+.logos-slide {
+    display: flex;
+    flex-shrink: 0;
+    animation: slider 10s linear infinite;
+}
+
+
+.logos-slide img {
+   
+    margin: 0 0;
+    display: inline-block;
+    
+}
+.w{
+     width:200px;
+}
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+@keyframes slider {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
