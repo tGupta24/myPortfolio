@@ -3,14 +3,14 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
-import Home from './components/Home.jsx'
+import Home from './components/Home'
 
-import Contact from './components/Contact.jsx'
-import Skills from './components/Skills.jsx'
+import Contact from './components/Contact'
+import Skills from './components/Skills'
 
-import Projects from './components/Projects.jsx'
+import Projects from './components/Projects'
 
-import About from './components/About.jsx'
+import About from './components/About'
 
 const router = createBrowserRouter(   // i create a router for routerProvider 
   createRoutesFromElements(
