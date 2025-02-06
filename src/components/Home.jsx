@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import About from "./About.jsx";
-import Contact from "./Contact.jsx";
+import Contact from "./Contacts.jsx";
 import Skills from "./Skills";
 import Projects from "./Projects.jsx";
 import "../App.css"

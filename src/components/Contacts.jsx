@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 
-export default function Contact() {
+export default function Contacts() {
     const { register, handleSubmit, reset } = useForm();
 
     const onSubmit = async (data) => {
