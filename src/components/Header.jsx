@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import ThemeBtn from "./Themebtn";
+import ThemeBtn from "./Themebtns";
 import Menubtn from "./Menubtn";
 
 export default function Header() {
