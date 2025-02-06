@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CardButton({
+export default function CardButtons({
     to,
     className = "",
     children = "Live Demo", // Default button text
