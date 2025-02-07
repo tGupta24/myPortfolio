@@ -10,4 +10,4 @@ const Popup = () => {
     );
 };
 
-export default Popup;
+export { Popup };

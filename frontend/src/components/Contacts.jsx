@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
-import Popup from "./popup";
+import { Popup } from "./Popup";
 
 
 
