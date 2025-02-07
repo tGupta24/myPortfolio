@@ -4,38 +4,38 @@ export default function Contacts() {
     const { register, handleSubmit, reset } = useForm();
 
     const onSubmit = async (data) => {
+
+
+        try {
+            /* const response = await fetch(url, options);
+               options is object {
+                       //method
+                       //body 
+                       // headers
+                  }
+            */
+            const response = await fetch("http://localhost:8001/api/v1/users/contact", {
+                method: "POST",
+                headers:
+                {
+                    "Content-Type": "application/json",
+
+                },
+                body: JSON.stringify(data),
+            })
+            if (response.ok) {
+                alert("Will contact you soon!")
+            }
+            else {
+                alert("Faild to send message")
+            }
+
+        }
+        catch (error) {
+            console.error("Error:", error);
+            alert("Something went wrong.");
+        }
         reset();
-        alert("working on backend!!")
-        // try {
-        //     /* const response = await fetch(url, options);
-        //        options is object {
-        //                //method
-        //                //body 
-        //                // headers
-        //           }
-        //     */
-        //     const response = await fetch(url, {
-        //         method: "POST",
-        //         headers:
-        //         {
-
-
-        //         },
-        //         body: JSON.stringify(data),
-        //     })
-        //     if (response.ok) {
-        //         alert("Will contact you soon!")
-        //     }
-        //     else {
-        //         alert("Faild to send message")
-        //     }
-
-        // }
-        // catch (error) {
-        //     console.error("Error:", error);
-        //     alert("Something went wrong.");
-        // }
-        // reset();
     }
     /*
       try {
@@ -81,7 +81,7 @@ export default function Contacts() {
                             {/* Name Field */}
                             <div className="flex flex-col mb-4 w-full">
                                 <input
-                                    {...register("fullname", {
+                                    {...register("fullName", {
                                         required: true,
                                     })}
                                     // {...register(string , object)}
@@ -112,7 +112,7 @@ export default function Contacts() {
                         {/* Telephone Field (Optional) */}
                         <div className="flex flex-col mb-4">
                             <input
-                                {...register("tel", {
+                                {...register("phoneNumber", {
                                     required: true
                                 })}
                                 type="tel"
