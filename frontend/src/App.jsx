@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-
 import './App.css'
 import Header from './components/Header'
 import { Provider } from './theme/theme'
@@ -8,8 +7,8 @@ import Footer from './components/Footer';
 import MenuBar from './components/Menubar';
 import menuLogo from "/menu.svg"
 import closeLogo from "/cross.svg"
-import { set } from 'react-hook-form';
-import Popup from './components/popup';
+
+
 
 
 
