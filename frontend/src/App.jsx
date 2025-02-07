@@ -9,6 +9,8 @@ import MenuBar from './components/Menubar';
 import menuLogo from "/menu.svg"
 import closeLogo from "/cross.svg"
 import { set } from 'react-hook-form';
+import Popup from './components/popup';
+
 
 
 function App() {
@@ -61,6 +63,7 @@ function App() {
   }, [theme]);
   return (
     <Provider value={{ isMenuBar, showMenuBar, theme, darkTheme, lightTheme }}>
+
       <Header />
       <MenuBar />
       <Outlet />

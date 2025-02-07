@@ -1,4 +1,8 @@
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
+import Popup from "./popup";
+
+
 
 export default function Contacts() {
     const { register, handleSubmit, reset } = useForm();
@@ -24,10 +28,10 @@ export default function Contacts() {
                 body: JSON.stringify(data),
             })
             if (response.ok) {
-                alert("Will contact you soon!")
+                toast.success("will contact soon")
             }
             else {
-                alert("Faild to send message")
+                toast.error("Faild to send message")
             }
 
         }
@@ -60,6 +64,7 @@ export default function Contacts() {
      */
     return (
         <div className="appear m-auto p-2 mt-5">
+            <Popup />
             <div className="border-2 p-4 shadow-md border-gray-300 bg-white text-black rounded-md dark:bg-black dark:text-white dark:border-[rgb(28,135,255)]">
                 <div className="flex flex-col sm:flex-row sm:gap-8 p-6 justify-center">
                     {/* Left Section: Title and Description */}
