@@ -22,8 +22,7 @@ export default function About() {
                         {/* Content Section */}
                         <div className="text-gray-700 dark:text-gray-200">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis vel voluptatibus repellendus corporis architecto nam laudantium natus minus enim doloribus.
-                                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                my name is tarun
                             </p>
                         </div>
                     </div>

@@ -8,6 +8,8 @@ import forces from "/code-forces.svg";
 import gitHub from "/github.png";
 import git from "/social.png";
 import Img from "./Img";
+import expresslogo from "/expresslogo.png";
+import css from "/css-3.png";
 
 
 export default function Skills() {
@@ -27,31 +29,30 @@ export default function Skills() {
                             </div>
 
 
-                            <div className="logos-slide flex justify-center gap-10 ml-6">
-                                <Img src={reactLogo} tag="react" to="https://react.dev" />
-                                <Img src={js} tag="javascript" />
+                            <div className="logos-slide flex justify-center gap-10 ml-7">
                                 <Img src={html} tag="HTML" />
-                                <Img src={c} tag="C++" />
+                                <Img src={css} tag="css" />
+                                <Img src={js} tag="javascript" />
+                                <Img src={reactLogo} tag="react" to="https://react.dev" />
                                 <Img src={forces} tag="CodeForces" />
-                                <Img src={gitHub} tag="GitHub" />
+                                <Img src={c} tag="C++" />
                                 <Img src={git} tag="Git" />
                                 <Img src={gitHub} tag="GitHub" />
-                                <Img src={git} tag="Git" />
-                                <Img src={reactLogo} tag="GitHub" />
+                                <Img src={expresslogo} tag="expressJs" />
+
 
                             </div>
 
-                            <div className="logos-slide flex justify-center gap-10 ml-5">
-                                <Img src={reactLogo} tag="react" />
-                                <Img src={js} tag="javascript" />
+                            <div className="logos-slide flex justify-center gap-10 ml-7">
                                 <Img src={html} tag="HTML" />
-                                <Img src={c} tag="C++" />
+                                <Img src={css} tag="css" />
+                                <Img src={js} tag="javascript" />
+                                <Img src={reactLogo} tag="react" to="https://react.dev" />
                                 <Img src={forces} tag="CodeForces" />
-                                <Img src={gitHub} tag="GitHub" />
+                                <Img src={c} tag="C++" />
                                 <Img src={git} tag="Git" />
                                 <Img src={gitHub} tag="GitHub" />
-                                <Img src={git} tag="Git" />
-                                <Img src={reactLogo} tag="GitHub" />
+                                <Img src={expresslogo} tag="expressJs" />
                             </div>
                             <div className="absolute top-0 right-0 z-10 w-[60px] bg-gradient-to-l from-white to-transparent h-full dark:bg-gradient-to-l dark:from-black dark:to-transparent">
                             </div>
