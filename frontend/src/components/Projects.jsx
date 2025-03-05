@@ -13,21 +13,25 @@ export default function Projects() {
             ProjectName: "E-Cell",
             imgUrl: "/ecell.png",
             content: "Developed a simple website using HTML and CSS to strengthen my skills in design and responsiveness .",
+            url: "https://ecell-dxux-d5zr8hnx8-tarun-gupta-s-projects.vercel.app/"
         },
         {
             ProjectName: "Currency Converter",
             imgUrl: "/converter.png",
             content: "Created a currency converter using React to improve my skills in state management and API integration.",
+            url: "https://ecell-dxux-d5zr8hnx8-tarun-gupta-s-projects.vercel.app/"
         },
         {
             ProjectName: "Gaming Tools",
             imgUrl: "/game.png",
             content: "Developed a basic e-commerce web using HTML and CSS to practice building styling user interfaces.",
+            url: "https://evolve-ten-eosin.vercel.app/"
         },
         {
             ProjectName: "Todo App",
             imgUrl: "/todo.png",
             content: "Built a React-based to-do app with update, and delete functionality to strengthen my skills in state management.",
+            url: "https://reactjs-five-phi.vercel.app/"
         },
         {
             ProjectName: "Password Generator",
@@ -66,9 +70,10 @@ export default function Projects() {
     };
 
     return (
-        <div className="appear w-full p-2 mt-5 bg-white dark:bg-black">
+        <div className=" appear w-full p-2 mt-5 bg-white dark:bg-black">
             <div className="m-auto border-solid p-2 border-2 border-slate-300 lg:px-20 shadow-md bg-white rounded-md relative dark:bg-black dark:border-[rgb(28,135,255)]">
-                <h1 className="text-black text-3xl p-3 dark:text-white">Project Section</h1>
+                <h1 className="text-black text-3xl p-3 dark:text-white">💻<span className="font-bold text-amber-900">Projects</span> and Work</h1>
+                <p className="text-black p-3 dark:text-white">Here are a few projects I've worked on recently.</p>
                 <Slider ref={sliderRef} {...settings}>
                     {data.map((project, index) => (
                         <div key={index} className="p-2 transform hover:scale-102 transition duration-300">
@@ -84,7 +89,7 @@ export default function Projects() {
                                 </div>
                                 <div className="flex justify-between mt-4">
                                     <CardButton
-                                        to="https://reactjs-five-phi.vercel.app/"
+                                        to={project.url}
                                         children="Live Demo"
                                         className="bg-orange-700"
                                         target="_blank"

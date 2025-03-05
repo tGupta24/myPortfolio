@@ -16,10 +16,7 @@ export default {
         "shake": 'shake 1s infinite',
       },
       fontFamily: {
-        custom: ["Montserrat", "serif"],
-        luckiest: ["Luckiest Guy", "serif"]
-
-
+        raleway: ["Raleway", "sans-serif"],
       },
       keyframes: {
         "loop-scroll": {

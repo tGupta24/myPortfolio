@@ -56,7 +56,7 @@ const MenuBar = () => {
                                     <button onClick={open}>Project</button>
                                 </NavLink>
                             </li>
-                            <li>
+                            {/* <li>
                                 <NavLink
                                     to="/About"
                                     className={({ isActive }) =>
@@ -65,7 +65,7 @@ const MenuBar = () => {
                                 >
                                     <button onClick={open}>About</button>
                                 </NavLink>
-                            </li>
+                            </li> */}
                             <li>
                                 <NavLink
                                     to="/contact"

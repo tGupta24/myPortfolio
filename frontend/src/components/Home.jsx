@@ -27,7 +27,7 @@ export default function Home() {
                     {/* Image Section */}
                     <div className="lg:w-1/2 flex justify-center">
                         <img
-                            src="https://vision-portfolio-gamma.vercel.app/static/media/2150797600.3cc1529c18d9969a7f7d.png"
+                            src="/boy.png"
                             alt="HelloWorld Image"
                             className="w-full max-w-xs lg:max-w-md xl:max-w-lg h-auto object-cover rounded-lg hover:scale-105 transform transition-transform duration-300"
                         />
@@ -35,7 +35,7 @@ export default function Home() {
                     <div className="flex flex-col justify-center">
                         <div className=" w-full lg:w-5/6 text-white p-6 bg-[rgb(65,9,37)] rounded-lg shadow-lg overflow-hidden m-auto hover:scale-105 transform transition-transform duration-300 dark:bg-[rgb(65,9,37)] "
                         >
-                            <div className="font-mono text-[12px]  md:text-lg lg:text-xl text-left text-white">
+                            <div className="font-mono text-[12px] md:text-lg lg:text-xl text-left text-white">
                                 <div className="text-yellow-500 dark:text-yellow-300">const HelloWorld = &#123;</div>
                                 <div>
                                     <span className="text-green-500 dark:text-green-300">"_id": </span>
@@ -50,15 +50,13 @@ export default function Home() {
                                     <span className="">"true",</span>
                                 </div>
                                 <div>
-                                    <span className="text-green-500 dark:text-green-300">"technologies": </span>
-                                    <span className="">[HTML, css, js, react, dsa, cp],</span>
+                                    <span className="text-green-500 dark:text-green-300">"Tools&Technologies": </span>
+                                    <span className="">[JavaScript,React,MongoDB, Express, NodeJS,Postman],</span>
                                 </div>
-                                <div>
-                                    <span className="text-green-500 dark:text-green-300">"Projects": </span>
-                                    <span className="">[TODO, ThemeSwitcher, ReactWeb, react, dsa, cp],</span>
-                                </div>
+
                                 <div className="text-yellow-500 dark:text-yellow-300">&#125;</div>
                             </div>
+
 
                         </div>
 
@@ -89,7 +87,7 @@ export default function Home() {
 
             <Skills />
             <Projects />
-            <About />
+            {/* <About /> */}
             <Contact />
         </>
     );
