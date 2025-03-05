@@ -1,34 +1,40 @@
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import { Popup } from "./Popups";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 
 
 
 export default function Contacts() {
     const { register, handleSubmit, reset } = useForm();
+    const [loader, setLoader] = useState(false);
 
 
 
     const onSubmit = async (data) => {
-
-        axios.post("http://localhost:8000/api/v1/users/contact", {
-            fullName: data.fullName,
+        setLoader(true)
+        const userInfo = {
+            name: data.name,
             email: data.email,
-            phoneNumber: data.phoneNumber,
-            message: data.message
-        }).then((res) => {
-            toast.success("Message Sent Successfully")
-            reset()
-        }).catch((err) => {
-            toast.error("Error in sending message")
-            reset()
-            throw err
-        }).finally(() => {
-            reset()
-        })
-    }
+            message: data.message,
+            access_key: "9d7c855d-3b0a-4254-92dc-6aef7b6da44d"
+        };
+
+        try {
+            await axios.post("https://api.web3forms.com/submit", userInfo);
+            toast.success("Messege sent successfully");
+            reset();
+            setLoader(false)
+
+        } catch (err) {
+            toast.error("Error occured while sending messege");
+            reset();
+            setLoader(false)
+        }
+
+
+    };
     return (
         <div className="appear m-auto p-2 mt-5">
             <Popup />
@@ -107,9 +113,15 @@ export default function Contacts() {
                         {/* Submit Button */}
                         <button
                             type="submit"
-                            className="w-full sm:w-auto bg-orange-700 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg mt-3 transition ease-in-out duration-300"
+                            className="w-full sm:w-auto bg-orange-700 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg mt-3 transition ease-in-out duration-300 flex justify-center items-center gap-2"
+                            disabled={loader} // Disable button when loading
                         >
-                            Submit
+                            {loader ? (
+                                <svg className="animate-spin h-5 w-5 text-white" viewBox="0 0 24 24">
+                                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 00-8 8h4z"></path>
+                                </svg>
+                            ) : "Submit"}
                         </button>
                     </form>
                 </div>
