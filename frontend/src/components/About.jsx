@@ -22,7 +22,7 @@ export default function About() {
                         {/* Content Section */}
                         <div className="text-gray-700 dark:text-gray-200">
                             <p>
-                                my name is tarun
+                                my name is
                             </p>
                         </div>
                     </div>
