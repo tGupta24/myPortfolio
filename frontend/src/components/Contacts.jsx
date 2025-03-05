@@ -13,9 +13,10 @@ export default function Contacts() {
 
 
     const onSubmit = async (data) => {
+        console.log(data);
         setLoader(true)
         const userInfo = {
-            name: data.name,
+            name: data.fullName,
             email: data.email,
             message: data.message,
             access_key: "9d7c855d-3b0a-4254-92dc-6aef7b6da44d"
