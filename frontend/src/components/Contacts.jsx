@@ -19,7 +19,7 @@ export default function Contacts() {
             name: data.fullName,
             email: data.email,
             message: data.message,
-            access_key: "9d7c855d-3b0a-4254-92dc-6aef7b6da44d"
+            access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
         };
 
         try {
